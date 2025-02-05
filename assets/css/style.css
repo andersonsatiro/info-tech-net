@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Global ---------- */
+
+header#global-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    border: 0.1rem solid #f2f2f2;
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#header-logo h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1D1E20;
+}
+
+#header-logo span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #185ADB;
+}
+
+nav#header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+}
+
+#header-nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #1D1E20;
+    transition: 0.5s ease-out;
+}
+
+#header-nav ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #185ADB;
+}
+
+#header-user {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#header-user p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #185ADB;
+}
+
+#header-user span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #185ADB;
+}
+
+#header-user button {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100%;
+    border: 0.1rem solid rgba(195, 212, 233, 0.5);
+    background-color: white;
+    transition: 0.7s ease-out;
+}
+
+#header-user button:hover {
+    cursor: pointer;
+    background-color: rgba(195, 212, 233, 0.5);
+}
+
+#header-user button i {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #185ADB;
+}
+
+/* Seção do título principal ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#main-title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+#main-title-section > h1, #main-title-section span {
+    font-size: 6.4rem;
+    font-weight: 600;
+    color: #1D1E20;
+}
+
+#main-title-section span {
+    color: #185ADB;
+}
+
+#main-title-section p {
+    max-width: 70rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #31373D;
+}
+
+#main-title-section p span {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#main-title-section div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+a.services, a.feedbacks {
+    font-size: 1.6rem;
+    color: #1D1E20;
+    text-decoration: none;
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.2rem;
+}
+
+a.services {
+    border: 0.1rem solid white;
+    background-color: #FFC947;
+    transition: 0.7s ease-out
+}
+
+a.services:hover {
+    background-color: white;
+    border: 0.1rem solid #FFC947;
+    cursor: pointer;
+}
+
+a.feedbacks {
+    border: 0.1rem solid #FFC947;
+    background-color: white;
+    transition: 0.7s ease-out;
+}
+
+a.feedbacks:hover {
+    background-color: #FFC947;
+    cursor: pointer;
+}
+
+/* Seção de serviços ---------- */
+
+#services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 70%;
+}
+
+#services-section header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+#services-section header div {
+    width: 100%;
+    border-bottom: 0.1rem solid rgba(195, 212, 233, 0.5);
+}
+
+#services-section header h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #1D1E20;
+}
+
+#services-list {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+#services-list li {
+    position: relative;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-color: #1D1E20;
+}
+
+#services-list li img {
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+#services-list li h2 {
+    display: none;
+}
+
+#services-list li h2:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.6rem;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: #F6F6F3;
+
+    background-color: #1D1E20;
+}
+
