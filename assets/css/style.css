@@ -205,14 +205,16 @@ a.feedbacks:hover {
 }
 
 #services-list li {
-    position: relative;
+    width: fit-content;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-    background-color: #1D1E20;
+}
+
+.focused-item {
+    position: relative;
 }
 
 #services-list li img {
-    width: 100%;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
 }
@@ -221,7 +223,7 @@ a.feedbacks:hover {
     display: none;
 }
 
-#services-list li h2:hover {
+.item-footer {
     display: flex;
     align-items: center;
     justify-content: center;
