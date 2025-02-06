@@ -14,6 +14,7 @@ header#global-header {
     justify-content: space-between;
     padding: 2rem 5rem;
     border: 0.1rem solid #f2f2f2;
+    box-shadow: 0 0 10px lightgray;
 }
 
 #header-logo {
@@ -89,6 +90,10 @@ nav#header-nav ul {
     font-size: 1.6rem;
     font-weight: 500;
     color: #185ADB;
+}
+
+#header-nav-button {
+    display: none;
 }
 
 /* Seção do título principal ---------- */
@@ -199,9 +204,10 @@ a.feedbacks:hover {
 }
 
 #services-list {
-    display: flex;
-    gap: 1.2rem;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 #services-list li {
@@ -217,7 +223,11 @@ a.feedbacks:hover {
 #services-list li img {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px;
 }
+
 
 #services-list li h2 {
     display: none;
@@ -240,3 +250,98 @@ a.feedbacks:hover {
     background-color: #1D1E20;
 }
 
+@media (max-width: 950px) {
+/* Tentando fazer um menú dropDown - Miguel */
+    #global-header {
+        height: 100px;
+    }
+
+    #global-header #header-nav {
+        position: relative;
+        top: 50px;
+    }
+
+    #global-header #header-nav ul {
+        text-align: center;
+        display: none;
+    }
+
+    #header-user {
+        display: block;
+        min-width: 213px;
+    }
+    
+    #header-user button {
+        float: right;
+        margin-right: 8px;
+    }
+
+    #header-user p {
+        margin: auto;
+        margin-right: 0;
+        width: fit-content;
+    }
+
+    #header-nav-button {
+        display: none;
+        position: relative;
+        align-self: flex-end;
+        bottom: -20px;
+        min-width: 20px;
+    }
+
+    #header-nav-button:hover body {
+        background-color: red;
+    }
+
+    /* services-section e services-list */
+    #services-list {
+        display: block;
+        width: 100%;
+    }
+
+    #services-list li {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 6px;
+    }
+    
+    #services-list li img {
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        align-items: center;
+        gap: 2.6rem;
+        margin-top: 1.6rem;
+        margin-bottom: 10rem;
+    }
+
+    #main-title-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+    }
+    
+    #main-title-section > h1, #main-title-section span {
+        font-size: 3.4rem;
+        font-weight: 600;
+        color: #1D1E20;
+    }
+
+    #main-title-section span {
+        color: #185ADB;
+    }
+
+    #main-title-section p {
+        max-width: 44rem;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #31373D;
+    }
+}
