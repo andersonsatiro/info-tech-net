@@ -1,27 +1,14 @@
-const servicesListItems = Array.from(document.querySelectorAll('.services-list-item'));
+function exibirPainel() {
+    let painel = document.querySelector("#header-nav-drop");
+    let botao = document.querySelector("#nav-drop-botao"); 
 
-servicesListItems.forEach((item) => {
-    item.addEventListener('mouseover', () => {
-        item.classList.add('focused-item');
-        const itemFooter = document.querySelector('.item-footer')
-
-        if(itemFooter){
-            itemFooter.classList.add('item-footer')
-            itemFooter.style.display = 'flex'
-        }
-
-        servicesListItems.forEach((otherItem) => {
-            console.log(item === otherItem)
-            if(otherItem !== item) {
-                console.log('otherItem', otherItem)
-                otherItem.classList.remove('focused-item');
-                const otherItemFooter = document.querySelector('h2')
-
-                if(otherItemFooter){
-                    itemFooter.classList.remove('item-footer')
-                    itemFooter.style.display = 'none'
-                }
-            }
-        })
-    })
-})
+    if (painel.classList.contains("show")) {
+        painel.classList.remove("show");
+        botao.innerHTML = `<i class="ph ph-caret-double-down"></i>`;
+        /* alert("contem show"); */
+    } else {
+        painel.classList.add("show");
+        botao.innerHTML = `<i class="ph ph-caret-double-up"></i>`;
+        /* alert("não contem show"); */
+    }
+}
