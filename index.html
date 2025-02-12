@@ -29,30 +29,35 @@
         <h3>info<span>Tech</span>Net</h3>
       </div>
 
-      <nav id="header-nav">
+      <nav id="header-nav" class>
         <ul>
           <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li><a href="#services-section">Serviços</a></li>
           <li><a href="#">Elogios</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
 
+      <div id="nav-responsivo">
+        <button id="nav-drop-botao" onclick="exibirPainel()"><i class="ph ph-caret-double-down"></i></button> 
+        <nav id="header-nav-drop" class>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#services-section">Serviços</a></li>
+            <li><a href="#">Elogios</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav> 
+      </div>
+
       <div id="header-user">
         <p>👋Bem-vindo, <span>Info3M!</span></p>
-
-        <button>
-          <i class="ph ph-bag"></i>
-        </button>
-
-        <button>
-          <i class="ph ph-gear-six"></i>
-        </button>
       </div>
     </header>
 
     <main>
       <section id="main-title-section">
+        
         <h1>info<span>Tech</span>Net</h1>
 
         <p>
@@ -74,6 +79,16 @@
           <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
         </header>
         <ul id="services-list">
+          <li class="services-list-item focused-item">
+            <img src="assets/images/services/manutencao-pc.svg" alt="Manutenção de computadores">
+            <h2 class="item-footer">Manutenção de PC</h2>
+          </li>
+
+          <li class="services-list-item">
+            <img src="assets/images/services/manutencao-pc.svg" alt="Projetos de redes lógicas">
+            <h2 class="item-footer">Projetos de redes lógicas</h2>
+          </li>
+
           <li class="services-list-item focused-item">
             <img src="assets/images/services/manutencao-pc.svg" alt="Manutenção de computadores">
             <h2 class="item-footer">Manutenção de PC</h2>
