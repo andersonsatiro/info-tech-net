@@ -99,36 +99,36 @@ main {
     margin-bottom: 10rem;
 }
 
-#main-title-section {
+#sobre-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.8rem;
 }
 
-#main-title-section > h1, #main-title-section span {
+#sobre-section > h1, #sobre-section span {
     font-size: 6.4rem;
     font-weight: 600;
     color: #1D1E20;
 }
 
-#main-title-section span {
+#sobre-section span {
     color: #185ADB;
 }
 
-#main-title-section p {
+#sobre-section p {
     max-width: 70rem;
     font-size: 1.6rem;
     text-align: center;
     color: #31373D;
 }
 
-#main-title-section p span {
+#sobre-section p span {
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-#main-title-section div {
+#sobre-section div {
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -443,28 +443,28 @@ section header h2 {
         margin-bottom: 10rem;
     }
 
-    #main-title-section {
+    #sobre-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.8rem;
     }
     
-    #main-title-section > h1, #main-title-section span {
+    #sobre-section > h1, #sobre-section span {
         font-size: 3.4rem;
         font-weight: 600;
         color: #1D1E20;
     }
 
-    #main-title-section span {
+    #sobre-section span {
         color: #185ADB;
     }
 
-    #main-title-section {
+    #sobre-section {
         width: 80%;
     }
     
-    #main-title-section p {
+    #sobre-section p {
         max-width: 100%;
         font-size: 1.4rem;
         text-align: center;
@@ -508,16 +508,16 @@ section header h2 {
         left: -60vw;
     }
 
-    #main-title-section div {
+    #sobre-section div {
         display: block;
         width: 100%;
     }
 
-    #main-title-section div a:nth-child(1) {
+    #sobre-section div a:nth-child(1) {
         margin-bottom: 0.3rem;
     }
 
-    #main-title-section div a {
+    #sobre-section div a {
         display: block;
         text-align: center;
     }
