@@ -21,6 +21,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/interactions.js"></script>
   </head>
   <body>
     <header id="global-header">
@@ -31,10 +32,10 @@
 
       <nav id="header-nav" class>
         <ul>
-          <li><a href="#sobre-section">Sobre</a></li>
+          <li><a href="#main-title-section">Sobre</a></li>
           <li><a href="#services-section">Serviços</a></li>
-          <li><a href="#feedbacks-section">Feedbacks</a></li>
-          <li><a href="#contato-section">Contato</a></li>
+          <li><a href="#comments-section">Feedbacks</a></li>
+          <li><a href="#contacts-section">Contato</a></li>
         </ul>
       </nav>
 
@@ -42,10 +43,10 @@
         <button id="nav-drop-botao" onclick="exibirPainel()"><i class="ph ph-caret-double-down"></i></button> 
         <nav id="header-nav-drop" class>
           <ul>
-            <li><a href="#sobre-section">Sobre</a></li>
+            <li><a href="#main-title-section">Sobre</a></li>
             <li><a href="#services-section">Serviços</a></li>
-            <li><a href="#feedbacks-section">Elogios</a></li>
-            <li><a href="#contato-section">Contato</a></li>
+            <li><a href="#comments-section">Feedbacks</a></li>
+            <li><a href="#contacts-section">Contato</a></li>
           </ul>
         </nav> 
       </div>
@@ -56,7 +57,7 @@
     </header>
 
     <main>
-      <section id="sobre-section">
+      <section id="main-title-section">
         
         <h1>info<span>Tech</span>Net</h1>
 
@@ -68,7 +69,7 @@
 
         <div>
           <a href="#" class="services">veja nossos serviços</a>
-          <a href="#" class="feedbacks">o que falam sobre nós</a>
+          <a href="#comments-section" class="feedbacks">o que falam sobre nós</a>
         </div>
       </section>
 
@@ -101,7 +102,7 @@
         </ul>
       </section>
 
-      <section id="feedbacks-section">
+      <section id="comments-section">
         <header>
           <h2>Feedbacks</h2>
           <div></div>
@@ -198,7 +199,21 @@
           </li>
         </ul>
       </section>
-
+      <section id="contacts-section">
+        <header>
+            <h2>Contato</h2>
+            <div></div>
+            <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+        <div class="contact-content">
+            <p>Entre em contato conosco para saber mais sobre nossos serviços!</p>
+            <ul>
+                <li><strong>E-mail:</strong> info3m.sga@ifrn.edu.br</li>
+                <li><strong>Telefone:</strong> (84) 4002-8922</li>
+            </ul>
+        </div>
+    </section>
+    <p class="pFinal">©InfoTechNet - Todos os direitos reservados.</p>
     </main>
   </body>
 </html>
