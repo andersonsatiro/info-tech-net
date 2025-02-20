@@ -418,7 +418,7 @@ section header h2 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     main {
         align-items: center;
         gap: 2.6rem;
