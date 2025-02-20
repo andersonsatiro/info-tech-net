@@ -115,3 +115,15 @@ section header h2 {
     font-weight: 600;
     color: #1D1E20;
 }
+
+#header-logo > a:nth-child(2) {
+    text-decoration: none;
+}
+
+.contact-content > p:nth-child(1) {
+    padding-bottom: 1.6rem;
+}
+
+.pFinal {
+    margin-top: -8rem;
+}
