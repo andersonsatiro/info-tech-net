@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="InfoTechNet - oferecemos soluções tecnológicas!">
+    <meta name="author" content="Anderson Paiva, Andrey Lucas, Diego Soares, Miguel e José Arthur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InfoTechNet - serviço</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/servico.css">
+    <script src="../assets/js/servico.js" defer></script>
+    <script src="../assets/js/interactions.js"></script>
+  </head>
+  <body>
+    <header id="global-header">
+      <div id="header-logo">
+        <img src="../assets/images/logo.svg" alt="Logo da InfoTechNet">
+        <h3>info<span>Tech</span>Net</h3>
+      </div>
+
+      <nav id="header-nav" class>
+        <ul>
+          <li><a href="#main-title-section">Sobre</a></li>
+          <li><a href="#services-section">Serviços</a></li>
+          <li><a href="#comments-section">Feedbacks</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div id="nav-responsivo">
+        <button id="nav-drop-botao" onclick="exibirPainel()"><i class="ph ph-caret-double-down"></i></button> 
+        <nav id="header-nav-drop" class>
+          <ul>
+            <li><a href="#main-title-section">Sobre</a></li>
+            <li><a href="#services-section">Serviços</a></li>
+            <li><a href="#comments-section">Feedbacks</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav> 
+      </div>
+
+      <div id="header-user">
+        <p>👋Bem-vindo, <span>Info3M!</span></p>
+      </div>
+    </header>
+
+    <main>
+      <section id="main-title-section">
+        <h1></h1>
+        <p></p>
+        <a href="../index.html" class="home">voltar para home</a>
+      </section>
+
+      <section id="registros-section">
+        <header>
+          <h2>Registros</h2>
+          <div></div>
+          <img src="../assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+
+        <ul id="registros-list">
+        </ul>
+      </section>
+
+      <section id="forms-section">
+        <form action="https://mail.google.com/mail/u/0/#inbox?compose=new" class="form-servico" method="post" target="_blank">
+          <h3 id="name-sistem">info<span>Tech</span>Net</h3>
+            <div class="form-box">
+                <label id="label-name">Nome: </label>
+                <input type="text" placeholder="Digite seu Nome" required/>
+            </div>
+            <div class="form-box">
+              <label id="label-email">E-mail:</label>
+              <input type="email" placeholder="Digite seu e-mail" required/>
+            </div>
+            <div class="form-box">
+              <label class="label-observation">Observação:</label>
+              <input type="text" placeholder="Descreva sua observação ou necessidade"/>
+            </div>
+            <div class="form-box">
+              <label id="label-pay">Forma de Pagamento:</label>
+              <select class="select-pay" required>
+                <option class="option-pay">Selecione uma opção</option>
+                <option class="option-pay">Cartão</option>
+                <option class="option-pay">Espécie</option>
+                <option class="option-pay">Pix</option>
+              </select>
+            </div>
+            <div class="form-box">
+              <label id="label-service">Serviço:</label>
+              <input id="input-tipoDeServico" placeholder="diego" disabled/>
+            </div>
+            
+            <div class="form-box">
+              <Label class="label-date">Data Limite</Label>
+              <input type="date" placeholder="Escolha a data limite para resolução" required/>
+            </div>
+            <button type="submit" class="btn-send" required>Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
