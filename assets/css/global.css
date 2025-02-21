@@ -23,13 +23,13 @@ header#global-header {
     gap: 0.8rem;
 }
 
-#header-logo h3 {
+#header-logo h3, #name-sistem {
     font-size: 2rem;
     font-weight: 600;
     color: #1D1E20;
 }
 
-#header-logo span {
+#header-logo span, #name-sistem span {
     font-size: 2rem;
     font-weight: 600;
     color: #185ADB;
@@ -114,4 +114,16 @@ section header h2 {
     font-size: 3.2rem;
     font-weight: 600;
     color: #1D1E20;
+}
+
+#header-logo > a:nth-child(2) {
+    text-decoration: none;
+}
+
+.contact-content > p:nth-child(1) {
+    padding-bottom: 2.6rem;
+}
+
+.pFinal {
+    margin-top: -8rem;
 }

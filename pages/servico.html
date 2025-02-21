@@ -19,24 +19,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/servico.css">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/servico.js" defer></script>
     <script src="../assets/js/interactions.js"></script>
+    <script src="../assets/js/botao.js" defer></script>
   </head>
   <body>
     <header id="global-header">
-      <div id="header-logo">
-        <img src="../assets/images/logo.svg" alt="Logo da InfoTechNet">
-        <h3>info<span>Tech</span>Net</h3>
-      </div>
+        <div id="header-logo">
+          <img src="../assets/images/logo.svg" alt="Logo da InfoTechNet">
+          <a href="../index.html"><h3>info<span>Tech</span>Net</h3></a>
+        </div>
+      
+      
 
       <nav id="header-nav" class>
         <ul>
           <li><a href="#main-title-section">Sobre</a></li>
-          <li><a href="#services-section">Serviços</a></li>
-          <li><a href="#comments-section">Feedbacks</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="../index.html#services-section">Serviços</a></li>
+          <li><a href="../index.html#comments-section">Feedbacks</a></li>
+          <li><a href="#contacts-section">Contato</a></li>
         </ul>
       </nav>
 
@@ -45,9 +51,9 @@
         <nav id="header-nav-drop" class>
           <ul>
             <li><a href="#main-title-section">Sobre</a></li>
-            <li><a href="#services-section">Serviços</a></li>
-            <li><a href="#comments-section">Feedbacks</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="../index.html#services-section">Serviços</a></li>
+            <li><a href="../index.html#comments-section">Feedbacks</a></li>
+            <li><a href="#contacts-section">Contato</a></li>
           </ul>
         </nav> 
       </div>
@@ -75,11 +81,68 @@
         </ul>
       </section>
 
+      <form action="https://formsubmit.co/soares.diego@escolar.ifrn.edu.br" method="POST">
+        <label id="label-name" for="name">Nome*: </label>
+        <input type="text" name="name" required>
+        <br>
+        <label id="label-name" for="email">E-Mail*: </label>
+        <input type="email" name="email" required>
+        <br>
+        <button type="submit">Send</button>
+   </form>
+
       <section id="forms-section">
-        <form action="">
-          <p>formulário aqui</p>
+        <form action="https://formsubmit.co/soares.diego@escolar.ifrn.edu.br" class="form-servico" method="post" target="_blank">
+          <h3 id="name-sistem">info<span>Tech</span>Net</h3>
+            <div class="form-box">
+                <label id="label-name">Nome*: </label>
+                <input type="text" placeholder="Digite seu Nome" required/>
+            </div>
+            <div class="form-box">
+              <label id="label-email">E-mail*:</label>
+              <input type="email" placeholder="Digite seu e-mail" required/>
+            </div>
+            <div class="form-box">
+              <label class="label-observation">Observação:</label>
+              <input type="text" placeholder="Descreva sua observação ou necessidade"/>
+            </div>
+            <div class="form-box">
+              <label id="label-pay">Forma de Pagamento*:</label>
+              <select class="select-pay" required>
+                <option class="option-pay">Selecione uma opção</option>
+                <option class="option-pay">Cartão</option>
+                <option class="option-pay">Espécie</option>
+                <option class="option-pay">Pix</option>
+              </select>
+            </div>
+            <div class="form-box">
+              <label id="label-service">Serviço:</label>
+              <input id="input-tipoDeServico" placeholder="diego" disabled/>
+            </div>
+
+            <div class="form-box">
+              <Label class="label-date">Data Limite</Label>
+              <input type="date" placeholder="Escolha a data limite para resolução" required/>
+            </div>
+            <button type="submit" class="btn-send" required>Enviar</button>
         </form>
       </section>
+
+      <section id="contacts-section">
+        <header>
+            <h2>Contato</h2>
+            <div></div>
+            <img src="../assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+        <div class="contact-content">
+            <p>Entre em contato conosco para saber mais sobre nossos serviços!</p>
+            <ul>
+                <li><strong>E-mail:</strong> info3m.sga@ifrn.edu.br</li>
+                <li><strong>Telefone:</strong> (84) 4002-8922</li>
+            </ul>
+        </div>
+    </section>
+    <p class="pFinal">©InfoTechNet - Todos os direitos reservados.</p>
     </main>
   </body>
 </html>
