@@ -1,7 +1,7 @@
 const elements = document.querySelectorAll('.services-list-item').forEach(service => {
     service.addEventListener('click', () => {
-        const basePath = "/info-tech-net";
-        window.location.href = `${basePath}/pages/servico.html?tipo=${service.getAttribute('id')}`;
+        const baseUrl = window.location.origin
+        window.location.href = `/pages/servico.html?tipo=${service.getAttribute('id')}`
     })
 })
 
