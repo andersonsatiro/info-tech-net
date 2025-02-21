@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="InfoTechNet - oferecemos soluções tecnológicas!">
+    <meta name="author" content="Anderson Paiva, Andrey Lucas, Diego Soares, Miguel e José Arthur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InfoTechNet - home</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="assets/js/botao.js" defer></script>
+    <script src="assets/js/interactions.js"></script>
+  </head>
+  <body>
+    <header id="global-header">
+      <div id="header-logo">
+        <img src="assets/images/logo.svg" alt="Logo da InfoTechNet">
+        <h3>info<span>Tech</span>Net</h3>
+      </div>
+
+      <nav id="header-nav" class>
+        <ul>
+          <li><a href="#main-title-section">Sobre</a></li>
+          <li><a href="#services-section">Serviços</a></li>
+          <li><a href="#comments-section">Feedbacks</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div id="nav-responsivo">
+        <button id="nav-drop-botao" onclick="exibirPainel()"><i class="ph ph-caret-double-down"></i></button> 
+        <nav id="header-nav-drop" class>
+          <ul>
+            <li><a href="#main-title-section">Sobre</a></li>
+            <li><a href="#services-section">Serviços</a></li>
+            <li><a href="#comments-section">Feedbacks</a></li>
+            <li><a href="#contacts-section">Contato</a></li>
+          </ul>
+        </nav> 
+      </div>
+
+      <div id="header-user">
+        <p>👋Bem-vindo, <span>Info3M!</span></p>
+      </div>
+    </header>
+
+    <main>
+      <section id="main-title-section">
+        
+        <h1>info<span>Tech</span>Net</h1>
+
+        <p>
+          uma empresa especializada em manutenção de computadores, criação de sites, construção de redes lógicas
+          e projetos elétricos. Oferecemos <span>soluções tecnológicas</span> eficientes, com serviços sob medida
+          para atender às suas necessidades.
+        </p>
+
+        <div>
+          <a href="#services-section" class="services">veja nossos serviços</a>
+          <a href="#comments-section" class="feedbacks">o que falam sobre nós</a>
+        </div>
+      </section>
+
+      <section id="services-section">
+        <header>
+          <h2>Serviços</h2>
+          <div></div>
+          <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+        <ul id="services-list">
+          <li class="services-list-item focused-item" id="manutencao-computadores">
+            <img src="assets/images/services/manutencao-pc.svg" alt="Manutenção de computadores">
+            <h2 class="item-footer">Manutenção de PC</h2>
+          </li>
+
+          <li class="services-list-item" id="desenvolvimento-site">
+            <img src="assets/images/services/criacao-sites.jpg" alt="Desenvolvimento de sites">
+            <h2 class="item-footer">Desenvolvimento de sites</h2>
+          </li>
+
+          <li class="services-list-item focused-item" id="redes-logicas">
+            <img src="assets/images/services/rede-de-computadores.jpg" alt="Projetos de redes lógicas para empresas e residências.">
+            <h2 class="item-footer">Projetos de redes lógicas</h2>
+          </li>
+
+          <li class="services-list-item" id="projetos-eletricos">
+            <img src="assets/images/services/projeto-eletrico.jpg" alt="Projetos elétricos para residências e empresas">
+            <h2 class="item-footer">Projetos elétricos</h2>
+          </li>
+        </ul>
+      </section>
+
+      <section id="comments-section">
+        <header>
+          <h2>Feedbacks</h2>
+          <div></div>
+          <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+
+        <ul class="comments-list">
+          <li>
+            <div class="comment-header">
+              <div class="comment-header-left">
+                <span>AP</span>
+                <div>
+                  <p>Natal, RN</p>
+                  <h4>Marcelo, 23 jan 2025</h4>
+                  <p>às 12h30</p>
+                </div>
+              </div>
+
+              <div class="comment-header-right">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+          
+            <button>
+              <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
+              <span>23.4K</span>
+            </button>
+          </li>
+
+          <div class="parting-line"></div>
+
+          <li>
+            <div class="comment-header">
+              <div class="comment-header-left">
+                <span>AP</span>
+                <div>
+                  <p>Natal, RN</p>
+                  <h4>Marcelo, 23 jan 2025</h4>
+                  <p>às 12h30</p>
+                </div>
+              </div>
+
+              <div class="comment-header-right">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+          
+            <button>
+              <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
+              <span>23.4K</span>
+            </button>
+          </li>
+
+          <div class="parting-line"></div>
+
+          <li>
+            <div class="comment-header">
+              <div class="comment-header-left">
+                <span>AP</span>
+                <div>
+                  <p>Natal, RN</p>
+                  <h4>Marcelo, 23 jan 2025</h4>
+                  <p>às 12h30</p>
+                </div>
+              </div>
+
+              <div class="comment-header-right">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+                <img src="assets/images/star.svg" alt="Símbolo de estrela de avaliação">
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+          
+            <button>
+              <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
+              <span>23.4K</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      
+      <section id="contacts-section">
+        <header>
+            <h2>Contato</h2>
+            <div></div>
+            <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
+        </header>
+        <div class="contact-content">
+            <p>Entre em contato conosco para saber mais sobre nossos serviços!</p>
+            <ul>
+                <li><strong>E-mail:</strong> info3m.sga@ifrn.edu.br</li>
+                <li><strong>Telefone:</strong> (84) 4002-8922</li>
+            </ul>
+        </div>
+    </section>
+    <p class="pFinal">©InfoTechNet - Todos os direitos reservados.</p>
+    </main>
+  </body>
+</html>
+
+
+<!--
+1 - realizamos manutenção preventiva e corretiva em computadores, notebooks e periféricos. 
+2 - projetamos e implementamos redes lógicas para empresas e residências.
+3 - desenvolvemos sites responsivos e otimizados para mecanismos de busca.
+4 - elaboramos projetos elétricos para residências e empresas.
+-->
