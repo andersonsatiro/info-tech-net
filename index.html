@@ -22,9 +22,6 @@
 
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <script src="assets/js/botao.js" defer></script>
-    <script src="assets/js/interactions.js"></script>
   </head>
   <body>
     <header id="global-header">
@@ -33,18 +30,18 @@
         <h3>info<span>Tech</span>Net</h3>
       </div>
 
-      <nav id="header-nav" class>
+      <nav id="header-nav">
         <ul>
           <li><a href="#main-title-section">Sobre</a></li>
           <li><a href="#services-section">Serviços</a></li>
           <li><a href="#comments-section">Feedbacks</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#contacts-section">Contato</a></li>
         </ul>
       </nav>
 
       <div id="nav-responsivo">
         <button id="nav-drop-botao" onclick="exibirPainel()"><i class="ph ph-caret-double-down"></i></button> 
-        <nav id="header-nav-drop" class>
+        <nav id="header-nav-drop">
           <ul>
             <li><a href="#main-title-section">Sobre</a></li>
             <li><a href="#services-section">Serviços</a></li>
@@ -83,24 +80,21 @@
           <img src="assets/images/logo.svg" alt="Logo do infoTechNet">
         </header>
         <ul id="services-list">
-          <li class="services-list-item focused-item" id="manutencao-computadores">
+          <li class="services-list-item" id="manutencao-computadores">
+            <div class="loading-spinner"></div>
             <img src="assets/images/services/manutencao-pc.svg" alt="Manutenção de computadores">
-            <h2 class="item-footer">Manutenção de PC</h2>
           </li>
 
           <li class="services-list-item" id="desenvolvimento-site">
             <img src="assets/images/services/criacao-sites.jpg" alt="Desenvolvimento de sites">
-            <h2 class="item-footer">Desenvolvimento de sites</h2>
           </li>
 
-          <li class="services-list-item focused-item" id="redes-logicas">
+          <li class="services-list-item" id="redes-logicas">
             <img src="assets/images/services/rede-de-computadores.jpg" alt="Projetos de redes lógicas para empresas e residências.">
-            <h2 class="item-footer">Projetos de redes lógicas</h2>
           </li>
 
           <li class="services-list-item" id="projetos-eletricos">
             <img src="assets/images/services/projeto-eletrico.jpg" alt="Projetos elétricos para residências e empresas">
-            <h2 class="item-footer">Projetos elétricos</h2>
           </li>
         </ul>
       </section>
@@ -116,10 +110,10 @@
           <li>
             <div class="comment-header">
               <div class="comment-header-left">
-                <span>AP</span>
+                <span>MA</span>
                 <div>
-                  <p>Natal, RN</p>
-                  <h4>Marcelo, 23 jan 2025</h4>
+                  <p>São Gonçalo, RN</p>
+                  <h4>Maria, 23 jan 2025</h4>
                   <p>às 12h30</p>
                 </div>
               </div>
@@ -133,11 +127,11 @@
               </div>
             </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+            <p>O site da minha empresa ficou incrível! Responsivo, rápido e otimizado para o Google. Antes quase ninguém encontrava meu negócio online, agora recebo muito mais contatos. Recomendo demais!</p>
           
             <button>
               <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
-              <span>23.4K</span>
+              <span>3.4K</span>
             </button>
           </li>
 
@@ -146,11 +140,11 @@
           <li>
             <div class="comment-header">
               <div class="comment-header-left">
-                <span>AP</span>
+                <span>RO</span>
                 <div>
                   <p>Natal, RN</p>
-                  <h4>Marcelo, 23 jan 2025</h4>
-                  <p>às 12h30</p>
+                  <h4>Roberto, 17 fev 2025</h4>
+                  <p>às 14h</p>
                 </div>
               </div>
 
@@ -163,11 +157,11 @@
               </div>
             </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+            <p>Meu notebook estava super lento e eu já achava que precisava trocar. Mas com a manutenção que fizeram, ele ficou como novo! Serviço rápido, preço justo e atendimento excelente!</p>
           
             <button>
               <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
-              <span>23.4K</span>
+              <span>900</span>
             </button>
           </li>
 
@@ -176,11 +170,11 @@
           <li>
             <div class="comment-header">
               <div class="comment-header-left">
-                <span>AP</span>
+                <span>FE</span>
                 <div>
-                  <p>Natal, RN</p>
-                  <h4>Marcelo, 23 jan 2025</h4>
-                  <p>às 12h30</p>
+                  <p>Macaíba, RN</p>
+                  <h4>Fernando, 20 fev 2025</h4>
+                  <p>às 19h34</p>
                 </div>
               </div>
 
@@ -193,17 +187,16 @@
               </div>
             </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe deleniti, numquam aliquid beatae perspiciatis eaque sint nihil unde sed enim itaque accusantium cumque ab dolorem magni, similique voluptatibus voluptas quidem?</p>
+            <p>Contratei o serviço para instalar a rede no meu escritório e fiquei impressionado com a qualidade. Agora tenho uma internet rápida e estável em todos os setores da empresa. Trabalho impecável!</p>
           
             <button>
               <img src="assets/images/liked.svg" alt="Símbolo de comentário curtido">
-              <span>23.4K</span>
+              <span>102</span>
             </button>
           </li>
         </ul>
       </section>
 
-      
       <section id="contacts-section">
         <header>
             <h2>Contato</h2>
@@ -217,16 +210,12 @@
                 <li><strong>Telefone:</strong> (84) 4002-8922</li>
             </ul>
         </div>
-    </section>
-    <p class="pFinal">©InfoTechNet - Todos os direitos reservados.</p>
+
+        <p class="pFinal">©InfoTechNet - Todos os direitos reservados.</p>
+      </section>
     </main>
   </body>
+
+  <script src="assets/js/botao.js" defer></script>
+  <script src="assets/js/interactions.js" defer></script>
 </html>
-
-
-<!--
-1 - realizamos manutenção preventiva e corretiva em computadores, notebooks e periféricos. 
-2 - projetamos e implementamos redes lógicas para empresas e residências.
-3 - desenvolvemos sites responsivos e otimizados para mecanismos de busca.
-4 - elaboramos projetos elétricos para residências e empresas.
--->

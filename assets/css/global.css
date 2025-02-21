@@ -116,14 +116,58 @@ section header h2 {
     color: #1D1E20;
 }
 
-#header-logo > a:nth-child(2) {
-    text-decoration: none;
+
+#contacts-section {
+    color: #FFFFFF;
+    padding: 40px 5%;
+    text-align: center;
+    border-radius: 8px;
 }
 
-.contact-content > p:nth-child(1) {
-    padding-bottom: 2.6rem;
+.contact-content {
+    color: #31373D;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-content li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-content strong {
+    color: #185ADB;
 }
 
 .pFinal {
-    margin-top: -8rem;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777777;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 15px;
+    }
+
+    .contact-content li {
+        font-size: 12px;
+    }
+
+    .pFinal {
+        font-size: 12px;
+    }
 }
