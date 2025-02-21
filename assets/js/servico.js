@@ -76,4 +76,14 @@ const tipoServico = urlParams.get('tipo')
 
 if(tipoServico){
     preencherConteudoPagina(tipoServico)
+
+    const selectService = document.querySelector("#select-service")
+
+    const optionService = document.createElement('option')
+    optionService.value = tipoServico
+    optionService.textContent = conteudo.current.title
+    optionService.selected = true
+
+    selectService.appendChild(optionService)
+    selectService.setAttribute("disabled", "true");
 }

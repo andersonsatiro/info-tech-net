@@ -1,6 +1,7 @@
 const elements = document.querySelectorAll('.services-list-item').forEach(service => {
     service.addEventListener('click', () => {
-        window.location.href = `http://127.0.0.1:5500/pages/servico.html?tipo=${service.getAttribute('id')}`
+        const baseUrl = window.location.origin
+        window.location.href = `${baseUrl}/pages/servico.html?tipo=${service.getAttribute('id')}`
     })
 })
 
@@ -11,10 +12,8 @@ function exibirPainel() {
     if (painel.classList.contains("show")) {
         painel.classList.remove("show");
         botao.innerHTML = `<i class="ph ph-caret-double-down"></i>`;
-        /* alert("contem show"); */
     } else {
         painel.classList.add("show");
         botao.innerHTML = `<i class="ph ph-caret-double-up"></i>`;
-        /* alert("não contem show"); */
     }
 }

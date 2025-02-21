@@ -87,6 +87,16 @@ nav#header-nav ul {
     position: absolute;
 }
 
+#nav-drop-botao {
+    border: none;
+    background-color: transparent;
+}
+
+#nav-drop-botao i {
+    font-size: 2rem;
+    color: #185ADB;
+}
+
 /* Seção do título principal ---------- */
 
 main {
@@ -207,17 +217,20 @@ section header h2 {
     width: fit-content;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
+    transition: 0.5s;
 }
 
-.focused-item {
-    position: relative;
+#services-list li:hover {
+    cursor: pointer;
+    transform: scale(0.98);
 }
 
 #services-list li img {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     margin-bottom: 1px;
     border-radius: 6px;
 }
@@ -324,6 +337,10 @@ section header h2 {
 
 
 @media (max-width: 950px) {
+
+    section header h2 {
+        font-size: 2rem;
+    }
     
     #global-header {
         height: 100px;
@@ -415,6 +432,24 @@ section header h2 {
     #header-nav-drop.show ul li a:active {
         font-size: 16px;
         color: darkblue;
+    }
+
+    .comment-header-left h4 {
+        font-size: 1.4rem;
+    }
+
+    .comments-list li > p {
+        text-align: center;
+    }
+
+    .comment-header {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+
+    .comment-header-right img {
+        width: 1.4rem;
     }
 }
 
