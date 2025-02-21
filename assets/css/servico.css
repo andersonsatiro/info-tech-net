@@ -135,3 +135,16 @@ a.home:hover {
 #name-sistem{
     text-align: center;
 }
+
+section#forms-section form.form-servico div.form-box {
+    margin: 16px;
+}
+
+section#forms-section form.form-servico div.form-box label {
+    display: flex;
+    width: fit-content;
+}
+
+section#forms-section form.form-servico div.form-box {
+    padding-bottom: 10px;
+}

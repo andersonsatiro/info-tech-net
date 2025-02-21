@@ -324,7 +324,7 @@ section header h2 {
 
 
 @media (max-width: 950px) {
-/* Tentando fazer um menú dropDown - Miguel */
+    
     #global-header {
         height: 100px;
     }
