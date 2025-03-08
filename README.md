@@ -1,3 +1,4 @@
 -> Bem-vindo ao InfoTechNet
 
-Githubpages - https://andersonsatiro.github.io/info-tech-net/
+Página principal - https://andersonsatiro.github.io/info-tech-net/
+Página de serviço - https://andersonsatiro.github.io/info-tech-net/pages/servico.html?tipo=manutencao-computadores
